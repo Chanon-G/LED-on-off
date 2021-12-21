@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body >
+
+<center><img id="myImage" src="pic_bulboff.gif" style="width:200px"><center></br>
+
+<button onclick="off()"><img id="swoff" src="swoff.png" width="200" height="100"></button>
+
+
+<script>
+function off() {
+            var Image_Id = document.getElementById('myImage');
+            if (Image_Id.src.match("pic_bulboff.gif")) {
+                Image_Id.src = "pic_bulbon.gif";
+            }
+            else if 
+                (Image_Id.src.match("pic_bulbon.gif")) {
+                Image_Id.src = "pic_bulboff.gif";
+            }
+            var Image_Id = document.getElementById('swoff');
+            if (Image_Id.src.match("swoff.png")) {
+                Image_Id.src = "swon.png";
+            }
+            else if  (Image_Id.src.match("swon.png")) {
+                Image_Id.src = "swoff.png";
+            }
+        }       
+</script>
+
+</body>
+</html>
